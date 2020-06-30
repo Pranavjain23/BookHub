@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.ProfileFragment"
+        android:background="#ffffff">
+
+
+
+    <RelativeLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+       >
+
+        <ImageView
+            android:id="@+id/imgUserIcon"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user_icon"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgUserIcon"
+            android:layout_marginTop="8dp"
+            android:text="Welcome User !"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:id="@+id/txtWelcomeDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtWelcome"
+            android:layout_marginTop="8dp"
+            android:text="You are welcome to the BookHub where you can see the lists of books and read their description and also add them to favourites"
+            android:paddingTop="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+        android:id="@+id/txtquote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="'' There is more treasure in books than in all the pirate's loot on Treasure Island''"
+        android:layout_below="@+id/txtWelcomeDesc"
+        android:layout_marginTop="20dp"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:textStyle="italic"
+        />
+
+        <TextView
+            android:id="@+id/txtquoteauthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Walt Disney"
+            android:layout_below="@+id/txtquote"
+            android:layout_marginTop="10dp"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            />
+
+        <TextView
+            android:id="@+id/txtcreator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtquoteauthor"
+            android:layout_marginTop="60dp"
+            android:text="About the Creator"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/llContent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llContent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/imgCreatorimg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:src="@drawable/creator_img"
+                android:scaleType="centerCrop"
+                android:padding="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.3">
+
+                <TextView
+                    android:id="@+id/txtMyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Pranav Jain"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtMyId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_below="@id/txtMyName"
+                    android:text="   jaincoolpranav@gmail.com"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtBookPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_below="@id/txtMyId"
+                    android:text=" 9821596708"
+                    android:textColor="#357a38"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_call"
+                    android:drawablePadding="0dp"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+       android:layout_below="@id/llContent1"
+        android:layout_centerHorizontal="true"
+
+        android:text=" © 2020 Pranav Jain . Privacy Policy " />
+
+
+</RelativeLayout>

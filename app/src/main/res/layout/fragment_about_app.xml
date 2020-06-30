@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AboutAppFragment"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/txtMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="BookHub is made for you: people who are genuinely curious about the world and your part in it. From opinion pieces to interviews to in-depth reportage, photography, and features, BookHub stories take many shapes, but always leave you with greater insight into the world."
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMain"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Our app features a clean reading experience designed to let you focus on the story (without an ad in sight) wherever you are, from your commute to your couch.
+"/>
+    <TextView
+        android:id="@+id/txtDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDesc"
+        android:text="DASHBOARD: The sheer volume of information on the internet can get to be too much. So in our app, we curate stories based on your picks."
+        android:layout_marginTop="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"/>
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDashboard"
+        android:text=" DESCRIPTION: You can read about the book by just clicking on the book in the dashboard menu and it will display you everything including the name of the book ,name of the author , price , rating and the description about the book."
+        android:layout_marginTop="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"/>
+
+    <TextView
+        android:id="@+id/txtFavourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDescription"
+        android:text="Favourites: Our app is designed to let you to add your favourite books at a special place so that when you come the next time on our app your favourite section will be defined in you favourite section . You can also remove the book from the favourites ."
+        android:layout_marginTop="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"/>
+
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/txtFavourite"
+       android:layout_margin="30dp"
+       android:text="Have a Great day"
+       android:background="@color/colorAccent"/>
+
+    </RelativeLayout>
